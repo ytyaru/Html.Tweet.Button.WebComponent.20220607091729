@@ -74,7 +74,6 @@ class TweetButtonGenerator {
         a.setAttribute('target', '_blank')
         a.setAttribute('rel', 'noopener noreferrer')
         if (this.options.hasOwnProperty('title') && this.options.title) { a.setAttribute('title', this.options.title) }
-        console.log(a)
         return a
     }
     async #getAddress() { return (window.hasOwnProperty('mpurse')) ? '\n' + await window.mpurse.getAddress() : '' }
